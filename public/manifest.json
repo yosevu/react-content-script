@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "React Content Script",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/*"],
+      "css": ["/static/css/main.css"],
+      "js": ["/static/js/main.js"]
+    }
+  ]
+}
