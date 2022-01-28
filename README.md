@@ -1,17 +1,11 @@
-# How to Inject a React app into a Chrome Extension as a content script
+# React Content Script
 
-![screenshot](/screenshot.png)
+How to inject [React](https://reactjs.org/) app into a Chrome Extension [Content Script](https://developer.chrome.com/docs/extensions/mv3/content_scripts/).
 
-## [Read the tutorial on Medium](https://medium.com/@yosevu/how-to-inject-a-react-app-into-a-chrome-extension-as-a-content-script-3a038f611067)
-
-## Installation
-
-- Fork or clone `https://github.com/bantuist/react-content-script.git`
-- `yarn run install`
-- `yarn run build`
-- Navigate to `chrome://extensions`
-- Check the _Developer mode_ checkbox
-- Click _Load unpacked extension..._
-- Find and select the `build` folder
-- Navigate to `https://www.google.com` 
-
+1. `git clone git@github.com:yosevu/react-content-script.git`
+1. `npm run build` 
+1. Navigate to [chrome://extensions/](chrome://extensions/)
+1. Click the "Developer mode" toggle switch in the top right of the window
+1. Click the "Load unpacked" button in top left of the window
+1. Go to the react-content-script directory and select the "build" directory to load the extension
+1. Navigate to https://blank.org/ to see the React app 
