@@ -14,7 +14,16 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "postbuild": "node ./scripts/postbuild.js",
+    "postbuild": "node ./scripts/postbuild.js && rm src/*",
+
+    "prebuild:popup": "cp popup/* src",
+    "build:popup": "APP=popup npm run build",
+    "postbuild:popup": "mv build dist",
+
+    "prebuild:content-script": "cp content-script/* src",
+    "build:content-script": "APP=content-script npm run build",
+    "postbuild:content-script": "mv build build-content-script",
+    
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

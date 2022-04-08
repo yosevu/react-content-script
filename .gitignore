@@ -8,6 +8,9 @@
 
 # production
 /build
+/dist
+/build-popup
+/build-content-script
 
 # misc
 .DS_Store

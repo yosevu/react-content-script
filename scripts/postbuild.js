@@ -12,7 +12,7 @@ const manifest = require('../public/manifest.json');
  */
 function readFile(path, prefix, extension) {
   const file = new RegExp(`^${prefix}\.[a-z0-9]+\.${extension}$`)
-  return fs.readdirSync(`./build/${path}`)
+  return fs.readdirSync(`./dist/${path}`)
            .filter(filename => file.test(filename))
            .map(filename => `${path}/${filename}`)[0];
 }
@@ -39,4 +39,13 @@ const newManifest = {
   ]
 };
 
-fs.writeFileSync('./build/manifest.json', JSON.stringify(newManifest, null, 2));
+function updateManifest(app) {
+  // if popup, update, popup script
+  // if content-script, update content-script
+}
+
+function writeManifest(app) {
+  fs.writeFileSync('./dist/manifest.json', JSON.stringify(updateManifest(app), null, 2))
+}
+
+((app) => ({[app]: writeManifest(app)}[app]))(process.env.App);
