@@ -1,12 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+///<reference types="chrome"/>
+import logo from './logo.svg'
+import './App.css'
+import React from 'react'
 
 function getLogo() {
   if (window.chrome) {
-    return window.chrome.runtime.getURL(logo);
+    return window.chrome.runtime.getURL(logo)
   }
 
-  return logo;
+  return logo
 }
 
 function App() {
@@ -18,7 +20,7 @@ function App() {
         <p>I'm a Content Script in a Chrome Extension!</p>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
