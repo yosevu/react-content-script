@@ -1,5 +1,7 @@
 # React Content Script
 
+<img width="895" alt="Screen Shot 2022-06-18 at 10 04 04 AM" src="https://user-images.githubusercontent.com/16216104/174416528-6e5ad272-5faa-41d4-a717-c210ed4924b0.png">
+
 How to inject [React](https://reactjs.org/) app into a Chrome Extension [Content Script](https://developer.chrome.com/docs/extensions/mv3/content_scripts/).
 
 1. `git clone git@github.com:yosevu/react-content-script.git`
