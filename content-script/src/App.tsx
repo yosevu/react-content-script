@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={`${logo}`} className="App-logo" alt="logo" />
+        <img src={`${getLogo()}`} className="App-logo" alt="logo" />
         <p>Hello, World!</p>
         <p>I'm a Chrome Extension Content Script!</p>
       </header>
