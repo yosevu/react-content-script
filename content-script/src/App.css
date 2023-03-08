@@ -3,6 +3,7 @@
 }
 
 .App-logo {
+  width: unset;
   height: 40vmin;
   pointer-events: none;
 }
