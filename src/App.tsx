@@ -7,7 +7,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="bg-gray-800 min-h-screen flex flex-col items-center justify-center text-white text-lg">
         <Logo className="App-logo" id="App-logo" title="React logo" />
         <p>Hello, World!</p>
         <p>I'm a Chrome Extension Popup!</p>
