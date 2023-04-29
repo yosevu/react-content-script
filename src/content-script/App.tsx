@@ -1,9 +1,9 @@
 /// <reference types="chrome" />
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'preact/hooks';
 import MyDiv from '../components/MyDiv';
 import './App.css';
-import { useStore } from '@nanostores/react';
+import { useStore } from '@nanostores/preact';
 // type ComponentProps = {
 //   word?: string;
 // };

@@ -1,7 +1,7 @@
 /// <reference types="chrome" />
 import './MyDiv.css';
 
-import { useState } from 'react';
+import { useState } from 'preact/hooks';
 
 type ComponentProps = {
   className: string;
