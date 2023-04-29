@@ -3,21 +3,29 @@
 import { useEffect, useState } from 'react';
 import MyDiv from '../components/MyDiv';
 import './App.css';
+import { useStore } from '@nanostores/react';
+// type ComponentProps = {
+//   word?: string;
+// };
+import { atom } from 'nanostores';
 
-type ComponentProps = {
-  word?: string;
-};
+export const wordStore = atom('initWord');
 
-function App({ word: wordProp = '' }: ComponentProps) {
+setTimeout(() => {
+  wordStore.set('kasha-outside');
+}, 2000);
+
+// function App({ word: wordProp = '' }: ComponentProps) {
+function App() {
   const list = [1, 2, 3];
 
-  const [word, setWord] = useState(wordProp);
+  const word = useStore(wordStore);
   const [promisedData, setPromisedData] = useState({});
 
-  // ПОСТАВИТЬ на ОБРАБОТЧИК СООБЩЕНИЯ или кастомного события 
-  setTimeout(() => {
-    setWord('kasha-inside');
-  }, 5000);
+  // ПОСТАВИТЬ на ОБРАБОТЧИК СООБЩЕНИЯ или кастомного события
+  // setTimeout(() => {
+  //   setWord('kasha-inside');
+  // }, 5000);
 
   const loadData = async (word: string) => {
     const res = await fetch('https://api.coindesk.com/v1/bpi/currentprice.json');

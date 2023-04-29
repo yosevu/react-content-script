@@ -9,12 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@nanostores/react": "^0.5.0",
+    "nanostores": "^0.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "web-vitals": "^3.0.3"
   },
   "devDependencies": {
-    "@crxjs/vite-plugin": "@crxjs/vite-plugin@2.0.0-beta.11",
+    "@crxjs/vite-plugin": "^1.0.14",
     "@types/chrome": "^0.0.197",
     "@types/node": "^18.8.3",
     "@types/react": "^18.0.17",
