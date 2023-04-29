@@ -2,7 +2,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './main.css';
 import App from './App';
-import reportWebVitals from '../utils/reportWebVitals';
+// import reportWebVitals from '../utils/reportWebVitals';
 
 const body = document.querySelector('body');
 
@@ -23,9 +23,16 @@ if (body) {
 const container = document.getElementById('root');
 const root = createRoot(container!);
 
+let word = 'initWord';
+setTimeout(() => {
+  word = 'kasha';
+
+  // НЕ РАБОТАЕТ
+}, 5000);
+
 root.render(
   <React.StrictMode>
-    <App />
+    <App word={word} />
   </React.StrictMode>
 );
-reportWebVitals(console.log);
+// reportWebVitals(console.log);

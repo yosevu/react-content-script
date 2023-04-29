@@ -1,0 +1,11 @@
+.MyDiv {
+  height: 10vmin;
+  width: 300px;
+  color: black;
+  cursor: pointer;
+  height: min-content;
+}
+
+.MyDiv-data {
+  font-size: 10px;
+}

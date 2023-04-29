@@ -1,12 +1,24 @@
 .App {
   text-align: center;
-  background-color: red;
+  user-select: none;
 }
 
 .App-logo {
   width: unset;
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
+}
+
+.App-logo-1 {
+  background-color: rgb(255, 197, 197);
+}
+
+.App-logo-2 {
+  background-color: #b8ffb8;
+}
+
+.App-logo-3 {
+  background-color: rgb(255, 255, 184);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -17,7 +29,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;

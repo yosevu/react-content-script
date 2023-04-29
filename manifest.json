@@ -4,13 +4,13 @@
   "version": "1.0.0",
   "action": {
     "default_title": "Popup",
-    "default_popup": "src/popup/index.html",
+    "default_popup": "popup.html",
     "default_icon": "logo192.png"
   },
   "icons": {},
   "content_scripts": [
     {
-      "matches": ["https://blank.org/*"],
+      "matches": ["<all_urls>"],
       "js": ["src/content-script/main.tsx"],
       "media": []
     }
