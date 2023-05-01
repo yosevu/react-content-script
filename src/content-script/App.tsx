@@ -29,7 +29,7 @@ function App() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const loadData = async (_word: string) => {
     const res = await fetch('https://api.coindesk.com/v1/bpi/currentprice.json');
-    const json = await res.json();
+    const json = await res.json(); //
 
     setPromisedData(json);
   };
