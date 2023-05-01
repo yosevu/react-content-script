@@ -1,6 +1,6 @@
 import './main.css';
-import App, { wordStore } from './App';
 import { render } from 'preact';
+import App, { wordStore } from './App';
 // import reportWebVitals from '../utils/reportWebVitals';
 
 const body = document.querySelector('body');

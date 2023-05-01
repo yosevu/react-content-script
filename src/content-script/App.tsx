@@ -1,13 +1,12 @@
 /// <reference types="chrome" />
-
+import { atom } from 'nanostores';
 import { useEffect, useState } from 'preact/hooks';
+import { useStore } from '@nanostores/preact';
 import MyDiv from '../components/MyDiv';
 import './App.css';
-import { useStore } from '@nanostores/preact';
 // type ComponentProps = {
 //   word?: string;
 // };
-import { atom } from 'nanostores';
 
 export const wordStore = atom('initWord');
 
@@ -27,7 +26,8 @@ function App() {
   //   setWord('kasha-inside');
   // }, 5000);
 
-  const loadData = async (word: string) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const loadData = async (_word: string) => {
     const res = await fetch('https://api.coindesk.com/v1/bpi/currentprice.json');
     const json = await res.json();
 
@@ -56,7 +56,7 @@ function App() {
         {list.map((el: number, index: number) => (
           <MyDiv
             key={index}
-            className={'App-logo-' + (index + 1)}
+            className={`App-logo-${index + 1}`}
             id={String(index)}
             onClick={(e: any) => handleClick(e, index)}
             word={word}

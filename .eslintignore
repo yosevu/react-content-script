@@ -1,0 +1,11 @@
+# *.svelte
+dist
+public
+.yarn
+.vscode
+node_modules
+node_modules/
+.eslintrc.*
+*.config.js
+*.config.ts
+*.json

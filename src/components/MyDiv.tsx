@@ -15,7 +15,7 @@ function MyDiv({ className, id, onClick, word }: ComponentProps) {
 
   return (
     <div
-      className={'MyDiv ' + className}
+      className={`MyDiv ${className}`}
       role="img"
       aria-describedby={id}
       onClick={(e) => {
