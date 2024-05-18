@@ -1,10 +1,8 @@
 .App {
-  width: 23rem;
   text-align: center;
 }
 
 .App-logo {
-  width: unset;
   height: 40vmin;
   pointer-events: none;
 }
