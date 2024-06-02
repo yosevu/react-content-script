@@ -22,19 +22,22 @@ let SampleData = {
             id: "1",
             keywords: "Clarity, Methodology, Findings, Contribution",
             reviewers: "R1, R4",
-            summary: "Reviewers 1 and 4 emphasize the need for clarity in methodology and findings to enhance the paper's contribution."
+            summary: "Reviewers 1 and 4 emphasize the need for clarity in methodology and findings to enhance the paper's contribution.",
+            prompt_question: "How do you perceive the significance and research quality of the paper, considering the varying opinions among reviewers?"
           },
           {
             id: "2",
             keywords: "Livestreaming, Literacy, Method, Findings",
             reviewers: "R2",
-            summary: "Reviewer 2 focuses on the importance of exploring livestreaming for literacy in China and the clarity of method and findings."
+            summary: "Reviewer 2 focuses on the importance of exploring livestreaming for literacy in China and the clarity of method and findings.",
+            prompt_question: "How do you perceive the significance and research quality of the paper, considering the varying opinions among reviewers?"
           },
           {
             id: "3",
             keywords: "Pedagogical models, Data analysis, Recommendations, HCI",
             reviewers: "R3",
-            summary: "Reviewer 3 highlights the significance of pedagogical models, data analysis, and recommendations for the HCI community."
+            summary: "Reviewer 3 highlights the significance of pedagogical models, data analysis, and recommendations for the HCI community.",
+            prompt_question: "How do you perceive the significance and research quality of the paper, considering the varying opinions among reviewers?"
           }
     ],
     section3: [
@@ -44,7 +47,8 @@ let SampleData = {
             reviewer_involved: "R1, R2, R3",
             summary: "Reviewers 1, 2, and 3 have differing opinions on the significance and research quality of the paper.",
             prompt_question: "How do you perceive the significance and research quality of the paper, considering the varying opinions among reviewers?"
-          }
+        
+        }
     ],
     section4: [
         {

@@ -5,21 +5,21 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsive
 const data = [
     {
         name: 'ORG',
-        r1: 4000,
-        r2: 2400,
-        r3: -2400,
+        r1: 4,
+        r2: 2.4,
+        r3: -2.4,
     },
     {
         name: 'SIG',
-        r1: 3000,
-        r2: -1398,
-        r3: 2210,
+        r1: 3,
+        r2: -1.5,
+        r3: 2.5,
     },
     {
         name: 'RQ',
-        r1: 2000,
-        r2: 5800,
-        r3: 2290,
+        r1: 2,
+        r2: 5.8,
+        r3: 2.4,
     },
 ];
 
