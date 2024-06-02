@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,24 +12,24 @@ import {
 import Summary from './Summary';
 import Discussion from './Discussion';
 import { useState } from 'react';
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
 
 function App() {
   const [status, setStatus] = useState('summary');
   return (
-    <Router>
-    <div>
-      {/* A <Switch> looks through its children <Route>s and
-          renders the first one that matches the current URL. */}
-      <Switch>
-        <Route path="/discussion">
-          <Discussion status={'discussion'}/>
-        </Route>
-        <Route path="/">
-          <Summary status={'summary'}/>
-        </Route>
-      </Switch>
-    </div>
-  </Router>
+  <Tabs
+      defaultActiveKey="summary"
+      id="uncontrolled-tab-example"
+      className="mb-3"
+    >
+      <Tab eventKey="summary" title="Summary">
+        <Summary status={'summary'}/>
+      </Tab>
+      <Tab eventKey="discussion" title="Discussion">
+      <Discussion status={'discussion'}/>
+      </Tab>
+    </Tabs>
   );
 }
 

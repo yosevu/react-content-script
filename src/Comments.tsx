@@ -2,29 +2,14 @@ import Card from 'react-bootstrap/Card';
 import Stack from 'react-bootstrap/Stack';
 import Badge from 'react-bootstrap/Badge';
 import './Comments.css'
+import SampleData from './Data';
 
-let commentsSampleDate = [
-    {
-        reviwer_involved: "Reviewer1",
-        topic_keywords: "Clarity, Methodology, Findings, Contribution, Reliability"
-    },
-    {
-        reviwer_involved: "Reviewer2",
-        topic_keywords: "Livestreaming, Literacy, China, Method, Findings"
-    },
-    {
-        reviwer_involved: "Reviewer3",
-        topic_keywords: "Pedagogical models, Community-driven, Data analysis, Recommendations, HCI"
-    },
-    {
-        reviwer_involved: "Reviewer4",
-        topic_keywords: "Clarity, Depth of analysis, Literature contribution, Data presentation, Methodology"
-    }
-]
+// Paste section 1 data here
+let commentsSampleDate = SampleData.section1
 
 function Comments() {
     return (
-        <Card>
+        <Card style={{marginLeft: '7px'}}>
             <Card.Header>
                 <h6>
                     Comments

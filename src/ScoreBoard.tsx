@@ -28,7 +28,7 @@ export default class ScoreBoard extends PureComponent {
 
     render() {
         return (
-            <Card>
+            <Card style={{marginRight: '7px'}}>
                 <Card.Header>
                     <h6>
                         Score Board

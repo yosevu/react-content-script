@@ -1,9 +1,12 @@
 {
   "manifest_version": 3,
   "name": "React Content Script",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "side_panel": {
+    "default_path": "index.html"
+  },
   "action": {
-    "default_title": "Popup",
+    "default_title": "click to open",
     "default_popup": "index.html",
     "default_icon": "logo192.png"
   },
