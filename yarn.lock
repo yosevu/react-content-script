@@ -2398,7 +2398,6 @@ __metadata:
     typescript: "npm:^5.5.4"
     vite: "npm:^5.4.0"
     vite-plugin-svgr: "npm:^4.2.0"
-    web-vitals: "npm:^4.2.3"
   languageName: unknown
   linkType: soft
 
@@ -2895,13 +2894,6 @@ __metadata:
   bin:
     vite: bin/vite.js
   checksum: 10c0/122de7795e1c3c08cd0acc7d77296f908398266b424492be7310400107f37a3cf4c9506f2b4b16619e57299ca2859b8ca187aac5e25f8e66d84f9204a1d72d18
-  languageName: node
-  linkType: hard
-
-"web-vitals@npm:^4.2.3":
-  version: 4.2.3
-  resolution: "web-vitals@npm:4.2.3"
-  checksum: 10c0/905bdb9434f365435c3c00e5f473ce088980fcd61068906e20a575bae9590e1cc28dab0f90958c66717591e2f4c9b809ec8025cef5796fa4bc1304d50332f125
   languageName: node
   linkType: hard
 
