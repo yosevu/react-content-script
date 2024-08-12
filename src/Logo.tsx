@@ -1,6 +1,3 @@
-/// <reference types="chrome" />
-/// <reference types="vite-plugin-svgr/client" />
-
 type LogoProps = {
   className: string;
   id: string;
